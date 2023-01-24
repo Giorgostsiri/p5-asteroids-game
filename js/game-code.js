@@ -482,6 +482,7 @@
 				}
 				if (getTouchFire()) // an epistrefei true eixe patithei ara pyrovoleis
                 {
+					console.log("Fire!");
                     spaceship.fireMissile(); /* mpoum - sketo - an h fireMissile den pairnei parametro den xreiazetai na stelneis to return tis getTouchFire() */
                 }
 

@@ -29,7 +29,7 @@ function setupTouchScreenControls()
 	
 	controllerNew.mousePressed(newGameTouchPressed);
 	controllerPause.mousePressed(pauseGameTouchPressed);
-	fire.mousePressed(getTouchFire);
+	fire.mousePressed(/*getTouchFire*/); // No! You must call a function to set a logical variable to true. Then the getTouchFire will return that variable. In case the variable is true then spaceship will fire.
 }
 
 function drawTouchScreenControls()
@@ -64,6 +64,7 @@ function touchRightPressed()
 
 function getTouchFire()
 {
+	// Check this out! This should return true only if touchFire button was pressed.
 	return true;
 }
 
